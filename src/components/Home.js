@@ -88,7 +88,7 @@ class Home extends Component {
                         <form className="form-group mt-5">
                             <input type="text" className="form-control" placeholder="What do you want to do ?" ref={input => this.task = input}/>
                         </form>
-                        <button type="submit" className="btn btn-block btn-primary mt-3" onClick={() => this.addTask(this.props.id)}>Up !</button>
+                        <button type="submit" className="btn btn-block btn-primary mt-3" onClick={() => this.addTask(this.props.userid)}>Up !</button>
                     
                         <ul className="list-group list-group-flush mb-5">
                             {this.renderTasks()}
